@@ -3,7 +3,19 @@ $primary: #a86370;
 $secondary: #feba66;
 $tertiary: #f9f871;
 
+$navbarHeight: 3rem;
+$pageHeight: calc(100vh - #{$navbarHeight});
+
 * {
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
@@ -22,7 +34,7 @@ $tertiary: #f9f871;
   justify-content: center;
 
   margin-top: 1rem;
-  height:  3rem;
+  height:  $navbarHeight;
   width:  calc(100vw - 1rem);
   font-size: 1.2rem;
 
@@ -43,5 +55,19 @@ $tertiary: #f9f871;
 /* Page */
 .page {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $pageHeight;
+  width: 100vw;
+}
 
+
+/*  CV  */
+.card {
+  display: flex;
+  background-color: white;
+  width: calc(50vw - 6rem);
+  height:  calc(50vh - 5rem);
+  margin: 1rem 2rem;
+  border-radius: 1rem;
 }
