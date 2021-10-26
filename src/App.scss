@@ -1,0 +1,47 @@
+$background: #322f37;
+$primary: #a86370;
+$secondary: #feba66;
+$tertiary: #f9f871;
+
+* {
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: $background;
+}
+
+/*  Navbar  */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1rem;
+  height:  3rem;
+  width:  calc(100vw - 1rem);
+  font-size: 1.2rem;
+
+  background: linear-gradient(to right, $primary, $secondary);
+  border-radius: 20px;
+}
+
+.nav-titles {
+  margin: 0 2rem;
+  text-decoration: none;
+  color: black;
+}
+.nav-titles:hover {
+  color: $tertiary;
+  cursor: pointer;
+}
+
+/* Page */
+.page {
+  display: flex;
+
+}
